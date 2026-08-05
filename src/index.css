@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #FF6321;
+    --primary-shadow: #D44A10;
+    --secondary: #FFD54F;
+    --bg: #FFF9F2;
+    --text: #2D2D2D;
+    --card: #FFFFFF;
+    --soft-gray: #F2F2F2;
+  }
+
+  body {
+    background-color: #E8E4E0;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Vibrant Palette utility classes */
+.btn-primary-vibrant {
+  background-color: var(--primary);
+  color: #FFFFFF;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 var(--primary-shadow);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+  user-select: none;
+}
+
+.btn-primary-vibrant:hover {
+  background-color: #FF7235;
+}
+
+.btn-primary-vibrant:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 var(--primary-shadow);
+}
+
+.option-btn-vibrant {
+  background-color: var(--card);
+  border: 2px solid var(--soft-gray);
+  padding: 16px 20px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.option-btn-vibrant:hover {
+  border-color: var(--primary);
+  background-color: rgba(255, 99, 33, 0.05);
+  transform: translateX(4px);
+}
+
+.option-btn-vibrant:active {
+  transform: scale(0.98);
+  background-color: rgba(255, 99, 33, 0.1);
+}
+
+/* Scrollbar styling for phone view */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+

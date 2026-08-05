@@ -1,0 +1,6 @@
+{
+  "name": "恋爱饭搭子人格测试",
+  "description": "恋爱饭搭子人格测试移动端H5 - 今天这一顿饭，暴露你的恋爱人格",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
